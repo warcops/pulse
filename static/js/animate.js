@@ -39,6 +39,14 @@ function minimizeVideo(){
     top: "-500px",
     left: "30%"
   }, delay);
+  setInterval(() => {
+    const radius = parseInt($('#respiration-circle').css('r'), 10);
+    $('#respiration-circle').animate({r: radius === 165? '200': '165'}, 1000);
+  }, 1000);
+  setInterval(() => {
+    const num = Math.floor(Math.random() * 5) + 20;
+    $('#respiration-text').text(num);
+  }, 2000);
   $("#graphs").animate({
     top: "-500px"
   }, delay);
