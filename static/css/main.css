@@ -168,6 +168,12 @@ button:visited, button:active{
   z-index: -1;
 }
 
+#respiration {
+  float: right;
+  top: -503px;
+  position: relative;
+}
+
 path {
   stroke: steelblue;
   stroke-width: 2;
